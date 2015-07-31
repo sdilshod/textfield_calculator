@@ -1,0 +1,20 @@
+{
+  "name": "textfield_calculator",
+  "version": "0.0.1",
+  "homepage": "https://github.com/sdilshod/textfield_calculator",
+  "authors": [
+    "sdilshod <samatov.dilshod@gmail.com>"
+  ],
+  "description": "Calculator for text fields in web page",
+  "moduleType": [
+    "globals"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/sdilshod/textfield_calculator.git"
+  },
+  "dependencies": {
+    "jquery": "1.11.1"
+  }
+  "license": "MIT"
+}
