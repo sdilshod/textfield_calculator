@@ -1,6 +1,8 @@
 {
   "name": "textfield_calculator",
   "version": "0.0.1",
+  "main": "",
+  "ignore": [],
   "homepage": "https://github.com/sdilshod/textfield_calculator",
   "authors": [
     "sdilshod <samatov.dilshod@gmail.com>"
@@ -15,6 +17,6 @@
   },
   "dependencies": {
     "jquery": "1.11.1"
-  }
+  },
   "license": "MIT"
 }
