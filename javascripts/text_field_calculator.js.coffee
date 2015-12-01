@@ -49,6 +49,7 @@ class TextFieldCalculatorView
 
 
   bindings: () =>
+    #TODO need to validate input tag for numiric and arifmetic aperations(+-*/)
     @$inputField.on 'keypress', (e) => @calculate(e)
     $(@config.ui.calculatorOkButtonSelector).on 'click', (e) => @close()
     @$closeButton.on 'click', (e) => @close(false)
@@ -57,7 +58,7 @@ class TextFieldCalculatorView
     if $.inArray(event.which, @$arifmeticOperationCodes) >= 0
       event.preventDefault()
       # If we pressed ENTER last time and attempt to press again, nothing happens
-      if @$enterKeyPressed && event.which == 13
+      if (@$enterKeyPressed || @$arifmeticKeyPressed) && event.which == 13
         return false
       @$arifmeticKeyPressed = true
       @$countOfPressedArifmeticKeys += 1
